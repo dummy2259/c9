@@ -1,6 +1,6 @@
 # c9
 FROM z3cka/debianvm:latest
-MAINTAINER Casey Grzecka <c@sey.gr>
+MAINTAINER Dummy2259 <Null@Nope.NoEmailHere>
 
 RUN apt update && apt install -y build-essential gcc git make python2.7
 # load nvm & desired node version
@@ -35,8 +35,8 @@ RUN cd /opt && \
 RUN mkdir /workspace
 
 ARG c9port=80
-ARG user=c9
-ARG pass=rules
+ARG user=
+ARG pass=
 ARG workspace="/workspace"
 
 ENV c9port $c9port
